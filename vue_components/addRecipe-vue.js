@@ -1,6 +1,6 @@
 var addRecipeForm =
 `
-    <div class=addForm>
+    <div id=addForm>
         <form id="recipeForm" action="">
         <ul id="formLabelList">
             <li v-for="item in labels" :key="item.label" class="fieldContainer">

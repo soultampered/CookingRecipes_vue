@@ -8,9 +8,10 @@ Vue.component('add-recipe-form', {
 });
 
 
-// Vue.component('recipe-list', {
+Vue.component('recipe-list', {
 
-// });
+template: recipeList
+});
 
 // Vue.component('recipe-view', {
 
