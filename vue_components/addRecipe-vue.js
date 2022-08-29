@@ -10,7 +10,9 @@ var addRecipeForm =
         </ul>
 
         <div class="fieldContainer">
-            <button name="rsubmit" id="rsubmit_recipe" type="button" class="btn_submit">{{ submit }}</button>
+            <li v-for="item in buttons" :key="item.label" class="button">
+                <button name="rbutton" type="button" class="button_action">{{item.label}}</button>
+            </li>
         </div>
         </form>
     </div>

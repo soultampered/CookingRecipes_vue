@@ -1,16 +1,28 @@
 Vue.component('add-recipe-form', {
     props: [
         'labels',
-        'submit',
+        'buttons',
     ],
+
+    methods: {
+        submitForm(event) {
+            console.log('the click event works');
+            document.getElementById('recipeForm').submit();
+        }
+        
+    },
 
     template: addRecipeForm
 });
 
 
 Vue.component('recipe-list', {
+    props: [
+        'labels',
+        'buttons',
+    ],
 
-template: recipeList
+    template: recipeList
 });
 
 // Vue.component('recipe-view', {
@@ -29,7 +41,10 @@ var app = new Vue({
             { label: 'Ingredient List' },
             { label: 'Recipe Instructions' }
         ],
-        btnSubmit: 'submit',
+        buttons: [
+            { label: 'submit' },
+            { label: 'back' }
+        ],
     }
 
 }); 
