@@ -18,7 +18,7 @@ Vue.component('add-recipe-form', {
 
 Vue.component('recipe-list', {
     props: [
-        'labels',
+        'recipeDetails',
         'buttons',
     ],
 
@@ -45,6 +45,12 @@ var app = new Vue({
             { label: 'submit' },
             { label: 'back' }
         ],
+        recipeDetails: [
+            { date: 'Date Added'},
+            { title: 'Title'},
+            { time: 'Time'},
+            { calorie: 'Calorie Count'}
+        ]
     }
 
 }); 
