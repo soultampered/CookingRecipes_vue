@@ -1,3 +1,13 @@
+<?php
+    // connect to database
+    $conn = mysqli_connect('localhost','m_dye', 'Reaper7100', 'recipe_list');
+
+    //check connection
+    if(!$conn) {
+        echo 'Connection error: ' . mysqli_connect_error();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
